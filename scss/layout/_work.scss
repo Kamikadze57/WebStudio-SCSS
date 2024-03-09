@@ -1,21 +1,21 @@
 .work {
     padding-bottom: 94px;
 }
-.work-title {
+.work__title {
     color: var(--main-color);
     text-align: center;
     font-size: 36px;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
 }
-.work-list {
+.work__list {
     display: flex;
     gap: 30px;
 }
-.work-item {
+.work__item {
     position: relative;
 }
-.work-item-title {
+.work__item__title {
     color: #fff;
     text-align: center;
     font-size: 14px;
