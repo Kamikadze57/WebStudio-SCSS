@@ -21,15 +21,15 @@
     background-color: #f5f4fa;
     margin-bottom: 30px;
   }
-  &:nth-child(2)::before {
-    background-image: url("../images/SVG/clock.svg");
-  }
-  &:nth-child(3)::before {
-    background-image: url("../images/SVG/diagram.svg");
-  }
-  &:nth-child(4)::before {
-    background-image: url("../images/SVG/astronaut.svg");
-  }
+}
+.advantage__item:nth-child(2)::before {
+  background-image: url("../images/SVG/clock.svg");
+}
+.advantage__item:nth-child(3)::before {
+  background-image: url("../images/SVG/diagram.svg");
+}
+.advantage__item:nth-child(4)::before {
+  background-image: url("../images/SVG/astronaut.svg");
 }
 .advantage__title {
   color: var(--main-color);
