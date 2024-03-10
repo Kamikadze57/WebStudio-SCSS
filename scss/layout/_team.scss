@@ -24,7 +24,7 @@
   width: 270px;
   height: 260px;
 }
-.team__list__name {
+.team__name {
   color: var(--main-color);
   text-align: center;
   font-size: 16px;
@@ -33,17 +33,17 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.team__list__profession {
+.team__profession {
   color: var(--add-color);
   text-align: center;
   letter-spacing: 0.48px;
 }
-.team__item__list {
+.team-soc-links {
   display: flex;
   padding: 16px 32px 30px;
   gap: 10px;
 }
-.team__item__list__item__link {
+.team-soc-links__link {
   border-radius: 50%;
   padding: 12px;
   width: 44px;
@@ -57,12 +57,12 @@
     background-color: var(--accent-color);
     cursor: pointer;
   }
-  &:hover .soc__link__svg,
-  &:focus .soc__link__svg {
+  &:hover .team-soc-links__svg,
+  &:focus .team-soc-links__svg {
     fill: #fff;
   }
 }
-.soc__link__svg {
+.team-soc-links__svg {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

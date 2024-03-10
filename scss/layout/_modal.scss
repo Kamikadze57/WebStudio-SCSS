@@ -32,7 +32,7 @@
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
-.modal__hero__btn {
+.modal__close__btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 6px;
@@ -59,7 +59,7 @@
   letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
-.modal__hero__label {
+.modal__label {
   color: var(--add-color);
   font-size: 12px;
   letter-spacing: 0.12px;
@@ -70,7 +70,7 @@
     margin-bottom: 20px;
   }
 }
-.modal__hero__label__input {
+.modal__label__input {
   margin-top: 4px;
   padding: 12px 42px;
   width: 100%;
@@ -82,18 +82,18 @@
   &:hover {
     border: 1px solid #2196f3;
   }
-  &:hover + .modal__hero__label__input__svg,
-  &:focus + .modal__hero__label__input__svg {
+  &:hover + .modal__label__input__svg,
+  &:focus + .modal__label__input__svg {
     fill: var(--accent-color);
   }
 }
-.modal__hero__label__input__svg {
+.modal__label__input__svg {
   position: absolute;
   bottom: 11px;
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__hero__label__textarea {
+.modal__label__textarea {
   resize: none;
   padding: 12px 16px;
   height: 96px;
@@ -115,22 +115,22 @@
     letter-spacing: 0.12px;
   }
 }
-.label__check {
+.modal__check {
   display: flex;
   justify-content: center;
   /* margin-top: 20px; */
 }
-.modal__hero__label__check {
+.modal__input-check {
   margin-right: 7px;
 }
-.modal__hero__label__agree {
+.modal__text-agree {
   color: var(--add-color);
   font-size: 14px;
   line-height: 24px;
   /* 171.429% */
   letter-spacing: 0.42px;
 }
-.modal__hero__label__link__agree {
+.modal__label__link__agree {
   color: var(--accent-color);
   text-decoration-line: underline;
 }
