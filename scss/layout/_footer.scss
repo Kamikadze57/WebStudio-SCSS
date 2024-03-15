@@ -44,9 +44,10 @@
   letter-spacing: 0.42px;
   margin-bottom: 20px;
 }
-.footer-soc-links {
+.footer-soc-links__list {
   display: flex;
   gap: 10px;
+  flex-direction: row;
 }
 .footer-soc-links__link {
   display: flex;
