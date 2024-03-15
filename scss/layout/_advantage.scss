@@ -13,7 +13,7 @@
     display: block;
     height: 120px;
     border: none;
-    background-image: url("../images/SVG/antenna.svg");
+    background-image: url("../images/svg/antenna.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
@@ -23,22 +23,22 @@
   }
 }
 .advantage__item:nth-child(2)::before {
-  background-image: url("../images/SVG/clock.svg");
+  background-image: url("../images/svg/clock.svg");
 }
 .advantage__item:nth-child(3)::before {
-  background-image: url("../images/SVG/diagram.svg");
+  background-image: url("../images/svg/diagram.svg");
 }
 .advantage__item:nth-child(4)::before {
-  background-image: url("../images/SVG/astronaut.svg");
+  background-image: url("../images/svg/astronaut.svg");
 }
 .advantage__title {
-  color: var(--main-color);
+  color: $main-color;
   font-size: 14px;
   letter-spacing: 0.42px;
   margin-bottom: 10px;
 }
 .advantage__text {
-  color: var(--add-color);
+  color: $add-color;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;

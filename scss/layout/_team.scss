@@ -4,7 +4,7 @@
   padding-bottom: 94px;
 }
 .team__title {
-  color: var(--main-color);
+  color: $main-color;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
@@ -25,7 +25,7 @@
   height: 260px;
 }
 .team__name {
-  color: var(--main-color);
+  color: $main-color;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -34,7 +34,7 @@
   margin-bottom: 10px;
 }
 .team__profession {
-  color: var(--add-color);
+  color: $add-color;
   text-align: center;
   letter-spacing: 0.48px;
 }
@@ -54,7 +54,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     cursor: pointer;
   }
   &:hover .team-soc-links__svg,

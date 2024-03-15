@@ -11,7 +11,7 @@
   gap: 50px;
 }
 .nav__link {
-  color: var(--main-color);
+  color: $main-color;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -20,17 +20,17 @@
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover, &:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 }
 .nav__link--current {
-  color: var(--accent-color);
+  color: $accent-color;
   &::after {
     content: "";
     display: block;
     width: 105%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     position: absolute;
     bottom: 0;
     border-radius: 5px;
@@ -49,21 +49,21 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--add-color);
+  color: $add-color;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 .contact__icon {
-  fill: var(--add-color);
+  fill: $add-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .contact__link:hover &,
   .contact__link:focus & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
