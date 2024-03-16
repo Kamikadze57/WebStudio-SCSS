@@ -5,6 +5,13 @@
   margin-bottom: 20px;
 }
 
+.clients__title, .team__title, .work__main-title {
+  color: #212121;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 1.08px;
+}
+
 body {
   font-family: Roboto;
 }
@@ -134,10 +141,10 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -236,10 +243,6 @@ address {
 }
 
 .work__main-title {
-  color: #212121;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
 
@@ -276,10 +279,6 @@ address {
 }
 
 .team__title {
-  color: #212121;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
 
@@ -322,8 +321,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 16px 32px 30px;
   gap: 10px;
+  padding: 16px 32px 30px;
 }
 
 .team-soc-links__link {
@@ -362,19 +361,12 @@ address {
   padding-bottom: 94px;
 }
 
-.clients__title {
-  color: #212121;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 1.08px;
-}
-
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
   gap: 30px;
+  margin-top: 50px;
 }
 
 .clients__list__item {
@@ -760,8 +752,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
   gap: 8px;
+  margin-bottom: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -793,9 +785,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
 }
 
 .catalog__item {

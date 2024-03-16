@@ -7,8 +7,7 @@
   align-items: center;
 }
 .nav__list {
-  display: flex;
-  gap: 50px;
+  @include flex(50px);
 }
 .nav__link {
   color: $main-color;
@@ -41,14 +40,12 @@
   }
 }
 .contact__list {
-  display: flex;
-  gap: 50px;
+  @include flex(50px);
   margin-left: auto;
 }
 .contact__link {
-  display: flex;
+  @include flex(10px);
   align-items: center;
-  gap: 10px;
   color: $add-color;
   font-size: 14px;
   font-weight: 500;

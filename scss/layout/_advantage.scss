@@ -3,8 +3,7 @@
   padding-bottom: 94px;
 }
 .advantage__list {
-  display: flex;
-  gap: 30px;
+  @include flex(30px);
 }
 .advantage__item {
   @include flex-basis(30px, 4);

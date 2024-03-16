@@ -3,12 +3,11 @@
   padding-bottom: 94px;
 }
 .clients__title {
-  @include title;
+  @extend %title;
 }
 .clients__list {
-  display: flex;
+  @include flex(30px);
   margin-top: 50px;
-  gap: 30px;
 }
 .clients__list__item {
   width: 170px;

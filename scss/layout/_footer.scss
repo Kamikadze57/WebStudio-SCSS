@@ -42,8 +42,7 @@
   @extend %footer-title;
 }
 .footer-soc-links__list {
-  display: flex;
-  gap: 10px;
+  @include flex(10px);
   flex-direction: row;
 }
 .footer-soc-links__link {

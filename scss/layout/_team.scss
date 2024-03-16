@@ -4,12 +4,11 @@
   padding-bottom: 94px;
 }
 .team__title {
-  @include title;
+  @extend %title;
   margin-bottom: 50px;
 }
 .team__list {
-  display: flex;
-  gap: 30px;
+  @include flex(30px);
 }
 .team__item {
   background-color: #ffffff;
@@ -36,9 +35,8 @@
   letter-spacing: 0.48px;
 }
 .team-soc-links {
-  display: flex;
+  @include flex(10px);
   padding: 16px 32px 30px;
-  gap: 10px;
 }
 .team-soc-links__link {
   border-radius: 50%;

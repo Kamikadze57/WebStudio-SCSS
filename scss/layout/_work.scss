@@ -2,12 +2,11 @@
     padding-bottom: 94px;
 }
 .work__main-title {
-    @include title;
+    @extend %title;
     margin-bottom: 50px;
 }
 .work__list {
-    display: flex;
-    gap: 30px;
+    @include flex(30px);
 }
 .work__item {
     position: relative;
