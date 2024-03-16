@@ -7,7 +7,7 @@
   gap: 30px;
 }
 .advantage__item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  @include flex-basis(30px, 4);
   &::before {
     content: "";
     display: block;
@@ -21,15 +21,17 @@
     background-color: #f5f4fa;
     margin-bottom: 30px;
   }
-}
-.advantage__item:nth-child(2)::before {
-  background-image: url("../images/svg/clock.svg");
-}
-.advantage__item:nth-child(3)::before {
-  background-image: url("../images/svg/diagram.svg");
-}
-.advantage__item:nth-child(4)::before {
-  background-image: url("../images/svg/astronaut.svg");
+  @for $i from 2 through 4 {
+    &:nth-child(#{$i})::before {
+      @if $i == 2 {
+        background-image: url("../images/svg/clock.svg");
+      } @else if $i == 3 {
+        background-image: url("../images/svg/diagram.svg");
+      } @else if $i == 4 {
+        background-image: url("../images/svg/astronaut.svg");
+      }
+    }
+  }
 }
 .advantage__title {
   color: $main-color;
@@ -40,6 +42,6 @@
 .advantage__text {
   color: $add-color;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.42px;
+  line-height: 1.71;
 }

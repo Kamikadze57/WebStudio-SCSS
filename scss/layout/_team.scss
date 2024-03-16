@@ -4,10 +4,7 @@
   padding-bottom: 94px;
 }
 .team__title {
-  color: $main-color;
-  text-align: center;
-  font-size: 36px;
-  letter-spacing: 1.08px;
+  @include title;
   margin-bottom: 50px;
 }
 .team__list {

@@ -39,10 +39,7 @@
   
 }
 .footer-soc-links__title {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  margin-bottom: 20px;
+  @extend %footer-title;
 }
 .footer-soc-links__list {
   display: flex;
@@ -67,10 +64,7 @@
   fill: #fff;
 }
 .footer-form__title {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  margin-bottom: 20px;
+  @extend %footer-title;
 }
 .footer-form__input {
   width: 358px;

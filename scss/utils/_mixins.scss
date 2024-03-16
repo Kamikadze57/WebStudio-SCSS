@@ -1,0 +1,9 @@
+@mixin flex-basis($gap, $count-items) {
+  flex-basis: calc((100% - $gap * (#{$count-items} - 1)) / #{$count-items});
+}
+@mixin title {
+  color: $main-color;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 1.08px;
+}
