@@ -1,19 +1,42 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   @extend %title;
 }
 .clients__list {
   @include flex(30px);
-  margin-top: 50px;
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
-.clients__list__item {
-  width: 170px;
-  height: 92px;
+.clients__item {
   padding: 16px 32px;
   position: relative;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 .clients__list__item__link {
   fill: #afb1b8;

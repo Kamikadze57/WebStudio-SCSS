@@ -1,10 +1,39 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
+}
+.btn-menu {
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.nav {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .nav__list {
   @include flex(50px);
@@ -18,9 +47,10 @@
   padding: 31px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
-  color: $accent-color;
-}
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .nav__link--current {
   color: $accent-color;
@@ -31,17 +61,33 @@
     height: 4px;
     background-color: $accent-color;
     position: absolute;
-    bottom: 0;
     border-radius: 5px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+      bottom: -2px;
+    }
+    @media screen and (min-width: 1200px) {
+      bottom: 0;
+    }
   }
   &:hover::after {
     transform: scale(1.2);
   }
 }
 .contact__list {
-  @include flex(50px);
-  margin-left: auto;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    @include flex(10px);
+    margin-left: auto;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex(50px);
+    margin-left: auto;
+    flex-direction: row;
+  }
 }
 .contact__link {
   @include flex(10px);

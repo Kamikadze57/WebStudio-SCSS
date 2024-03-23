@@ -30,13 +30,61 @@
 }
 .footer__container {
   display: flex;
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: unset;
+  }
 }
 .footer-wrapper-links {
-  margin-right: 70px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    align-items: baseline;
+  }
+}
+.footer-wrapper-links__list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .footer-soc-links {
-  margin-right: 90px;
-  
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    margin-right: 90px;
+    justify-content: flex-start;
+  }
 }
 .footer-soc-links__title {
   @extend %footer-title;
@@ -62,8 +110,32 @@
 .footer-soc-links__svg {
   fill: #fff;
 }
+.footer-form__container {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
 .footer-form__title {
   @extend %footer-title;
+}
+.footer-form {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .footer-form__input {
   width: 358px;

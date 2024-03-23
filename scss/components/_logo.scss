@@ -1,15 +1,21 @@
 .logo__blue {
-    color: $accent-color;
+  color: $accent-color;
 }
 .logo {
-    color: #000;
-    font-family: Raleway;
+  color: #000;
+  font-family: Raleway;
+  letter-spacing: 0.78px;
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-    letter-spacing: 0.78px;
     margin-right: 93px;
+  }
 }
 .footer__logo {
-    color: #fff;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
+  color: #fff;
+  margin-bottom: 20px;
+  display: inline-block;
+}
