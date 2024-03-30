@@ -76,7 +76,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -114,8 +114,8 @@ address {
 .btn-menu {
   display: block;
   margin-left: auto;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 @media screen and (min-width: 768px) {
   .btn-menu {
@@ -366,6 +366,12 @@ address {
   font-size: 14px;
   letter-spacing: 0.42px;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantage__title {
+    text-align: start;
+  }
 }
 
 .advantage__text {
@@ -420,11 +426,6 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .team {
-    padding-top: 123px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
@@ -433,18 +434,13 @@ address {
 }
 
 .team__title {
-  margin-bottom: 50px;
   font-size: 28px;
-}
-@media screen and (min-width: 768px) {
-  .team__title {
-    display: none;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
-    display: block;
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -581,8 +577,6 @@ address {
 }
 
 .clients__item {
-  padding: 16px 32px;
-  position: relative;
   -ms-flex-preferred-size: calc((100% - 30px * (2 - 1)) / 2);
       flex-basis: calc((100% - 30px * (2 - 1)) / 2);
 }
@@ -594,17 +588,15 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
-        flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+    -ms-flex-preferred-size: calc((100% - 30px * (6 - 1)) / 6);
+        flex-basis: calc((100% - 30px * (6 - 1)) / 6);
   }
 }
 
 .clients__link {
+  padding: 16px 32px;
   fill: #afb1b8;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,6 +615,11 @@ address {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
+}
+@media screen and (max-width: 479px) {
+  .clients__link {
+    padding: 16px 0;
+  }
 }
 
 .footer {
@@ -667,7 +664,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -680,7 +677,6 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -21,22 +21,18 @@
   }
 }
 .clients__item {
-  padding: 16px 32px;
-  position: relative;
   @include flex-basis(30px, 2);
   @media screen and (min-width: 768px) {
     @include flex-basis(30px, 3);
   }
   @media screen and (min-width: 1200px) {
-    @include flex-basis(30px, 4);
+    @include flex-basis(30px, 6);
   }
 }
 .clients__link {
+  padding: 16px 32px;
   fill: #afb1b8;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,5 +44,8 @@
     fill: $accent-color;
     border-color: $accent-color;
     cursor: pointer;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 16px 0;
   }
 }
