@@ -573,6 +573,8 @@ address {
 @media screen and (min-width: 1200px) {
   .clients__list {
     margin-top: 50px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
