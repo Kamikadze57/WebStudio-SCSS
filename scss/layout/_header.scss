@@ -1,8 +1,6 @@
 .header {
-  @media screen and (min-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
   @media screen and (min-width: 768px) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -17,22 +15,22 @@
   align-items: center;
 }
 .btn-menu {
-  @media screen and (min-width: 480px) {
-    display: block;
-    margin-left: auto;
-    width: 40px;
-    height: 40px;
-  }
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 .nav {
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  display: none;
   @media screen and (min-width: 768px) {
     display: block;
+    margin-left: 87px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 92px;
   }
 }
 .nav__list {
@@ -75,9 +73,7 @@
   }
 }
 .contact__list {
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  display: none;
   @media screen and (min-width: 768px) {
     @include flex(10px);
     margin-left: auto;

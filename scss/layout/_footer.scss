@@ -30,10 +30,8 @@
 }
 .footer__container {
   display: flex;
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-    gap: 30px;
-  }
+  flex-direction: column;
+  gap: 30px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,11 +44,9 @@
   }
 }
 .footer-wrapper-links {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     margin-right: 165px;
   }
@@ -60,11 +56,9 @@
   }
 }
 .footer-wrapper-links__list {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
@@ -72,11 +66,9 @@
   }
 }
 .footer-soc-links {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
@@ -111,11 +103,9 @@
   fill: #fff;
 }
 .footer-form__container {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
@@ -126,11 +116,9 @@
   @extend %footer-title;
 }
 .footer-form {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {

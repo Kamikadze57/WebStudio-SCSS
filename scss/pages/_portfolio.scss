@@ -1,11 +1,24 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .filter-list {
   @include flex(8px);
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .filter-list__btn {
   min-width: 73px;
@@ -31,10 +44,21 @@
 .catalog {
   @include flex(30px);
   flex-wrap: wrap;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .catalog__item {
-  @include flex-basis(60px, 3);
+  width: 100%;
   border: 1px solid #eee;
+  @include flex-basis(30px, 9);
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2);
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex-basis(30px, 3);
+  }
 }
 .catalog__item-tag {
   display: block;
@@ -55,6 +79,7 @@
 }
 .catalog__img {
   position: relative;
+  width: 100%;
 }
 .catalog__overlay {
   position: absolute;
