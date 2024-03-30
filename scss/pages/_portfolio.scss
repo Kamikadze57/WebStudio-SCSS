@@ -9,12 +9,13 @@
 .filter-list {
   @include flex(8px);
   margin-bottom: 50px;
-  justify-content: center;
+  justify-content: flex-start;
   @media screen and (max-width: 767px) {
-    width: 480px;
+    width: 326px;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -52,7 +53,6 @@
 .catalog__item {
   width: 100%;
   border: 1px solid #eee;
-  @include flex-basis(30px, 9);
   @media screen and (min-width: 768px) {
     @include flex-basis(30px, 2);
   }

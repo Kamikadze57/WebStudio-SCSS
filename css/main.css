@@ -923,8 +923,6 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 530px;
-  min-height: 580px;
   padding: 40px;
   background-color: #fff;
   border-radius: 4px;
@@ -937,11 +935,19 @@ address {
   transition: -webkit-transform 500ms linear;
   transition: transform 500ms linear;
   transition: transform 500ms linear, -webkit-transform 500ms linear;
+  min-width: 450px;
+  min-height: 610px;
 }
 .backdrop.is-hidden .modal__hero {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
       -ms-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
+}
+@media screen and (min-width: 1200px) {
+  .modal__hero {
+    min-width: 530px;
+    min-height: 580px;
+  }
 }
 
 .modal__close-btn {
@@ -1111,19 +1117,22 @@ address {
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 @media screen and (max-width: 767px) {
   .filter-list {
-    width: 480px;
+    width: 326px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
   .filter-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1179,8 +1188,6 @@ address {
 .catalog__item {
   width: 100%;
   border: 1px solid #eee;
-  -ms-flex-preferred-size: calc((100% - 30px * (9 - 1)) / 9);
-      flex-basis: calc((100% - 30px * (9 - 1)) / 9);
 }
 @media screen and (min-width: 768px) {
   .catalog__item {
