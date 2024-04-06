@@ -1078,11 +1078,36 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* margin-top: 20px; */
 }
 
-.modal__input-check {
+.modal__checkbox-custom {
   margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.modal__checkbox-custom:hover {
+  cursor: pointer;
+  border-color: #2196f3;
+}
+
+.modal__input-check:focus + .modal__checkbox-custom {
+  border-color: #2196f3;
+}
+
+.modal__input-check:checked + .modal__checkbox-custom {
+  background-color: #2196f3;
+  background-image: url("../images/svg/check.svg");
+  border-color: #2196f3;
+  background-size: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .modal__text-agree {

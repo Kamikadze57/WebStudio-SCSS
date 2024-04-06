@@ -24,7 +24,7 @@
   border-radius: 4px;
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: transform 500ms linear;
   min-width: 450px;
   min-height: 610px;
@@ -122,10 +122,30 @@
 .modal__check {
   display: flex;
   justify-content: center;
+  align-items: center;
   /* margin-top: 20px; */
 }
-.modal__input-check {
+.modal__checkbox-custom {
   margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $main-color;
+  border-radius: 2px;
+}
+.modal__checkbox-custom:hover {
+  cursor: pointer;
+  border-color: $accent-color;
+}
+.modal__input-check:focus + .modal__checkbox-custom {
+  border-color: $accent-color;
+}
+.modal__input-check:checked + .modal__checkbox-custom {
+  background-color: $accent-color;
+  background-image: url("../images/svg/check.svg");
+  border-color: $accent-color;
+  background-size: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .modal__text-agree {
   color: $add-color;
