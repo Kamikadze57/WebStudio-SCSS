@@ -33,16 +33,19 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 0 20px;
+  padding: 40px 20px;
   background-color: #fff;
   z-index: 999;
   transform: translateY(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &.is-open {
     transform: translateY(0);
   }
   @media screen and (min-width: 480px) {
-    padding: 0 40px;
+    padding: 40px 48px;
   }
 }
 .menu-container .menu-toggle {
@@ -58,7 +61,6 @@
   }
 }
 .mobile-menu-pages__list {
-  padding-top: 48px;
   @include flex(32px);
   flex-direction: column;
 }
@@ -76,13 +78,11 @@
   }
 }
 .mobile-menu-address__list {
-  padding-top: 300px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   @include flex(32px);
   flex-direction: column;
   @media screen and (min-width: 480px) {
-    padding-top: 260px;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 }
 .mobile-menu-phone__link {
@@ -111,7 +111,6 @@
 }
 .mobile-menu-soc__list {
   @include flex(5px);
-  justify-content: center;
 }
 .mobile-menu-soc__item {
   padding-right: 5px;
