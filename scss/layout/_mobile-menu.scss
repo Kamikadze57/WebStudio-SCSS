@@ -60,7 +60,7 @@
     fill: $accent-color;
   }
 }
-.mobile-menu-pages__list {
+.mobile-menu-pages {
   @include flex(32px);
   flex-direction: column;
 }
@@ -76,6 +76,9 @@
   @media screen and (min-width: 480px) {
     font-size: 40px;
   }
+}
+.current {
+  color: $accent-color;
 }
 .mobile-menu-address__list {
   margin-bottom: 50px;
@@ -109,11 +112,10 @@
     font-size: 24px;
   }
 }
-.mobile-menu-soc__list {
+.mobile-menu-soc {
   @include flex(5px);
 }
 .mobile-menu-soc__item {
-  padding-right: 5px;
   border-right: 1px solid #d3d3d3;
   &:nth-child(4) {
     border-right: none;
@@ -123,6 +125,7 @@
   }
 }
 .mobile-menu-soc__link {
+  padding-right: 5px;
   color: $accent-color;
   font-size: 16px;
   font-weight: 500;

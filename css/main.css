@@ -245,18 +245,37 @@ address {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_bg.png");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/images_hero/hero-bg_img-mob.jpg) no-repeat;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_hero/hero-bg_img-mob.jpg) no-repeat;
+  padding: 118px 0;
   background-size: cover;
+  background-position: top center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/images_hero/hero-bg_img-mob@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/images_hero/hero-bg_img-tab.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/images_hero/hero-bg_img-tab@2x.jpg");
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url("../images/images_hero/hero-bg_img.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/images_hero/hero-bg_img1@2x.jpg");
   }
 }
 
@@ -1455,7 +1474,7 @@ address {
   fill: #2196f3;
 }
 
-.mobile-menu-pages__list {
+.mobile-menu-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1479,6 +1498,10 @@ address {
   .mobile-menu-pages__link {
     font-size: 40px;
   }
+}
+
+.current {
+  color: #2196f3;
 }
 
 .mobile-menu-address__list {
@@ -1529,7 +1552,7 @@ address {
   }
 }
 
-.mobile-menu-soc__list {
+.mobile-menu-soc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1537,7 +1560,6 @@ address {
 }
 
 .mobile-menu-soc__item {
-  padding-right: 5px;
   border-right: 1px solid #d3d3d3;
 }
 .mobile-menu-soc__item:nth-child(4) {
@@ -1550,6 +1572,7 @@ address {
 }
 
 .mobile-menu-soc__link {
+  padding-right: 5px;
   color: #2196f3;
   font-size: 16px;
   font-weight: 500;
