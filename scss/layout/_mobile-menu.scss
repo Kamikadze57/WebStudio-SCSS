@@ -80,7 +80,7 @@
 .current {
   color: $accent-color;
 }
-.mobile-menu-address__list {
+.mobile-menu-address {
   margin-bottom: 50px;
   @include flex(32px);
   flex-direction: column;

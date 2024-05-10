@@ -35,6 +35,9 @@
     min-width: 530px;
     min-height: 580px;
   }
+  @media screen and (max-width: 424px) {
+    min-width: 90vw;  
+  }
 }
 .modal__close-btn {
   border: 1px solid rgba(0, 0, 0, 0.1);

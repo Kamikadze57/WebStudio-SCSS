@@ -965,6 +965,11 @@ address {
     min-height: 580px;
   }
 }
+@media screen and (max-width: 424px) {
+  .modal__hero {
+    min-width: 90vw;
+  }
+}
 
 .modal__close-btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1504,7 +1509,7 @@ address {
   color: #2196f3;
 }
 
-.mobile-menu-address__list {
+.mobile-menu-address {
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1516,7 +1521,7 @@ address {
           flex-direction: column;
 }
 @media screen and (min-width: 480px) {
-  .mobile-menu-address__list {
+  .mobile-menu-address {
     margin-bottom: 45px;
   }
 }
